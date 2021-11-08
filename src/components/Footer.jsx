@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        
+        <div>
             <footer className="footer">
                 <div className="footer-top">
                     <div className="container">
@@ -13,15 +14,15 @@ export default function Footer() {
                             </div>
                             <div className="col-sm-9 text-sm-right mt-4 mt-sm-0">
                                 <ul className="list-unstyled mb-0 social-icon">
-                                    <li><a href="https://www.facebook.com/IMVirtualTech" target="_blink"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/imvirtualtech/" target="_blink"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://twitter.com/IMVirtualTech" target="_blink"><i className="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/imvirtualtech/" target="_blink"><i className="fab fa-linkedin-in" target="_blink"></i></a></li>
-                                    <li><a href="https://www.tumblr.com/blog/imvirtualtech" target="_blink"><i className="fab fa-tumblr"></i></a></li>
+                                    <li><Link to="https://www.facebook.com/IMVirtualTech" target="_blink"><i className="fab fa-facebook-f"></i></Link></li>
+                                    <li><Link to="https://www.instagram.com/imvirtualtech/" target="_blink"><i className="fab fa-instagram"></i></Link></li>
+                                    <li><Link to="https://twitter.com/IMVirtualTech" target="_blink"><i className="fab fa-twitter"></i></Link></li>
+                                    <li><Link to="https://www.linkedin.com/company/imvirtualtech/" target="_blink"><i className="fab fa-linkedin-in" target="_blink"></i></Link></li>
+                                    <li><Link to="https://www.tumblr.com/blog/imvirtualtech" target="_blink"><i className="fab fa-tumblr"></i></Link></li>
 
-                                    <li><a href="https://www.reddit.com/user/imvirtualtech" target="_blink"><i className="fab fa-reddit"></i></a></li>
+                                    <li><Link to="https://www.reddit.com/user/imvirtualtech" target="_blink"><i className="fab fa-reddit"></i></Link></li>
 
-                                    <li><a href="https://github.com/IMVirtualTech" target="_blink"><i className="fab fa-github"></i></a></li>
+                                    <li><Link to="https://github.com/IMVirtualTech" target="_blink"><i className="fab fa-github"></i></Link></li>
 
 
 
@@ -39,17 +40,17 @@ export default function Footer() {
                             <h5 className="text-primary mb-2 mb-sm-4">IT Services</h5>
                             <div className="footer-link">
                                 <ul className="list-unstyled mb-0">
-                                    <li><a href="web-development">Web Designing &amp; Development</a></li>
-                                    <li><a href="logo-design">Logo Designing</a></li>
-                                    <li><a href="broucher-flyer">Brochures &amp; Flyer Designing</a></li>
-                                    <li><a href="digital-marketing">Digital Marketing</a></li>
-                                    <li><a href="seo">Search Engine Optimization</a></li>
+                                    <li><Link to="web-development">Web Designing &amp; Development</Link></li>
+                                    <li><Link to="logo-design">Logo Designing</Link></li>
+                                    <li><Link to="broucher-flyer">Brochures &amp; Flyer Designing</Link></li>
+                                    <li><Link to="digital-marketing">Digital Marketing</Link></li>
+                                    <li><Link to="seo">Search Engine Optimization</Link></li>
                                 </ul>
                                 <ul className="list-unstyled mb-0">
-                                    <li><a href="mobile-app-development">Mobile App Development</a></li>
-                                    <li><a href="data-analysis">Data Analysis</a></li>
-                                    <li><a href="software-development">Software Development</a></li>
-                                    <li><a href="AI-Machine-Learning">AI &amp; Machine Learning</a></li>
+                                    <li><Link to="mobile-app-development">Mobile App Development</Link></li>
+                                    <li><Link to="data-analysis">Data Analysis</Link></li>
+                                    <li><Link to="software-development">Software Development</Link></li>
+                                    <li><Link to="AI-Machine-Learning">AI &amp; Machine Learning</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,9 +58,9 @@ export default function Footer() {
                             <h5 className="text-primary mb-2 mb-sm-4">Company</h5>
                             <div className="footer-link">
                                 <ul className="list-unstyled mb-0">
-                                    <li><a href="about-us">About</a></li>
-                                    <li><a href="IT-blog">IT Blog</a></li>
-                                    <li><a href="careers">Career</a></li>
+                                    <li><Link to="about-us">About</Link></li>
+                                    <li><Link to="IT-blog">IT Blog</Link></li>
+                                    <li><Link to="careers">Career</Link></li>
 
                                 </ul>
                             </div>
@@ -70,10 +71,10 @@ export default function Footer() {
                                 <ul className="list-unstyled mb-0">
 
 
-                                    <li><a href="contact-us">Contact Us</a></li>
+                                    <li><Link to="contact-us">Contact Us</Link></li>
 
 
-                                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                                    <li><Link to="privacy-policy">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,11 +88,11 @@ export default function Footer() {
                                     </div>
                                     <div className="contact-item">
                                         <label>Phone:</label>
-                                        <h4 className="mb-0 font-weight-bold"><a href="tel:+91 95947 89463">+91 95947 89463</a></h4>
+                                        <h4 className="mb-0 font-weight-bold"><Link to="tel:+91 95947 89463">+91 95947 89463</Link></h4>
                                     </div>
                                     <div className="contact-item">
                                         <label>Email:</label>
-                                        <a className="text-dark" href="mailto:it@imvirtualtech.com">it@imvirtualtech.com</a>
+                                        <Link className="text-dark" to="mailto:it@imvirtualtech.com">it@imvirtualtech.com</Link>
                                     </div>
                                 </div>
                             </div>
@@ -102,12 +103,12 @@ export default function Footer() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <p className="mb-0">Copyright© 2021 <a href="https://imvirtualtech.com/">IMVirtualTech</a> All Rights Reserved</p>
+                                <p className="mb-0">Copyright© 2021 <Link to="/">IMVirtualTech</Link> All Rights Reserved</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-        
+        </div>
     )
 }
