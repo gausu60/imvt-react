@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        
+        <div>
             <section className="banner">
                 <div className="swiper-container swiper-container-initialized swiper-container-horizontal">
                     <div className="swiper-wrapper h-700 h-sm-500" style={{transitionDuration: '0ms', transform: 'translate3d(-1349px, 0px, 0px)'}}><div className="swiper-slide align-items-center d-flex responsive-overlap-md bg-overlay-black-30 swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next" style={{ backgroundImage: 'url(images/banner2.jpeg)', backgroundSize: 'cover',backgroundPosition: 'center center',width: '1349px' }} data-swiper-slide-index="1">
@@ -55,6 +55,6 @@ export default function Banner() {
                     <div className="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><i className="fas fa-arrow-right icon-btn"></i></div>
                     <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             </section>
-        
+        </div>
     )
 }

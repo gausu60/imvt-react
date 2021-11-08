@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Info() {
     return (
+        <div>
             <section className="space-ptb bg-light position-relative">
                 <div className="container">
                     <div className="row">
@@ -83,6 +84,6 @@ export default function Info() {
                     </div>
                 </div>
             </section>
-        
+        </div>
     )
 }

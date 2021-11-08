@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Services() {
     return (
+        <div>
             <section className="space-ptb">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -79,6 +80,6 @@ export default function Services() {
                     </div>
                 </div>
             </section>
-        
+        </div>
     )
 }

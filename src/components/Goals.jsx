@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Goals() {
     return (
+        <div>
             <section className="space-pb">
                 <div className="container">
                     <div className="row justify-content-center pb-4 pb-md-5">
@@ -216,6 +217,7 @@ export default function Goals() {
                     </div>
                 </div>
             </section>
+        </div>
         
     )
 }

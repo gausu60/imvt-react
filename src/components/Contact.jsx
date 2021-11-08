@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Contact extends Component {
     render() {
         return (
-            
+            <div>
                 <section className="space-ptb">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -58,6 +58,7 @@ export default class Contact extends Component {
                         </div>
                     </div>
                 </section>
+            </div>
         )
     }
 }
