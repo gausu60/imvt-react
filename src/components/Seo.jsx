@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function Seo() {
+export default function Seo(props) {
+    const [title] = useState(props.title);
+    document.title = title;
     return (
         <div>
             <section class="py-6">

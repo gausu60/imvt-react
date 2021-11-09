@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function Mission() {
+export default function Mission(props) {
+    const [title]  = useState(props.title);
+    document.title = title;
     return (
         <div>
             <section className="space-pt">

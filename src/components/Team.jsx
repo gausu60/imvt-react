@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function Team() {
+export default function Team(props) {
+    const [title]  = useState(props.title);
+    document.title = title;
     return (
         <div>
             <section className="space-ptb">
