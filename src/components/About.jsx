@@ -19,6 +19,7 @@ export default class About extends Component {
                 <Pagebanner />
                 <Switch>
                     <Route exact path="/about-us">
+                        <About/>
                     </Route>
                     <Route exact path="/careers">
                         <Career/>
