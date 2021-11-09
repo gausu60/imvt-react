@@ -18,23 +18,21 @@ export default class About extends Component {
             <Router>
                 <Pagebanner />
                 <Switch>
-                    <Route exact path="/about-us">
-                        <About/>
-                    </Route>
+                    
                     <Route exact path="/careers">
-                        <Career/>
+                        <Career title="Careers"/>
                     </Route>
                     <Route exact path="/how-we-work">
-                        <Howwework/>
+                        <Howwework title="How We Work" />
                     </Route>
                     <Route exact path="/our-team">
-                        <Team/>
+                        <Team title="Our Team"/>
                     </Route>
                     <Route exact path="/mission-vision">
-                        <Mission/>
+                        <Mission title="Mission And Vission" />
                     </Route>
                     <Route exact path="/our-value">
-                        <Ourvalue/>
+                        <Ourvalue title="Our Value" />
                     </Route>
                 </Switch>
                 

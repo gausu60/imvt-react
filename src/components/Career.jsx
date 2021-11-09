@@ -1,6 +1,8 @@
-import React from 'react'
+import React , { useState } from 'react'
 
-export default function Career() {
+export default function Career(props) {
+    const [title]  = useState(props.title);
+    document.title = title;
     return (
         <div>
             <section class="space-ptb">

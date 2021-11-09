@@ -11,14 +11,14 @@ export default function Header() {
                             <div className="col-12">
                                 <div className="d-block d-md-flex align-items-center text-center">
                                     <div className="mr-4 d-inline-block py-1">
-                                        <Link to="mailto:it@imvirtualtech.com"><i className="far fa-envelope mr-2 fa-flip-horizontal text-primary"></i>it@imvirtualtech.com</Link>
+                                        <a href="mailto:it@imvirtualtech.com"><i className="far fa-envelope mr-2 fa-flip-horizontal text-primary"></i>it@imvirtualtech.com</a>
                                     </div>
                                     <div className="mr-auto d-inline-block py-1">
-                                        <Link to="tel:1-800-555-1234"><i className="fas fa-map-marker-alt text-primary mr-2"></i>Mumbai | Maharashtra | India</Link>
+                                        <a href="tel:1-800-555-1234"><i className="fas fa-map-marker-alt text-primary mr-2"></i>Mumbai | Maharashtra | India</a>
                                     </div>
                                     <div className="d-inline-block py-1">
                                         <ul className="list-unstyled">
-                                            <li><Link to="careers">Careers</Link></li>
+                                            <li><Link to="/careers">Careers</Link></li>
 
                                         </ul>
                                     </div>
@@ -40,32 +40,32 @@ export default function Header() {
 
                                 </li>
                                 <li className="dropdown nav-item">
-                                    <Link to="services.html" className="nav-link" data-toggle="dropdown">Services</Link>
+                                    <Link to="#" className="nav-link" data-toggle="dropdown">Services</Link>
                                     <ul className="dropdown-menu">
-                                        <li><Link className="dropdown-item" to="web-development">Web Designing &amp; Development<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="logo-design">Logo Designing<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/web-development">Web Designing &amp; Development<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/logo-design">Logo Designing<i className="fas fa-arrow-right"></i></Link></li>
 
-                                        <li><Link className="dropdown-item" to="broucher-flyer">Brochures &amp; Flyer Designing<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="digital-marketing">Digital Marketing<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="seo">Search Engine Optimization<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="mobile-app-development">Mobile App Development<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="data-analysis">Data Analysis<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="software-development">Software Development<i className="fas fa-arrow-right"></i></Link></li>
-                                        <li><Link className="dropdown-item" to="AI-Machine-Learning">AI &amp; Machine Learning<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/broucher-flyer">Brochures &amp; Flyer Designing<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/digital-marketing">Digital Marketing<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/seo">Search Engine Optimization<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/mobile-app-development">Mobile App Development<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/data-analysis">Data Analysis<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/software-development">Software Development<i className="fas fa-arrow-right"></i></Link></li>
+                                        <li><Link className="dropdown-item" to="/AI-Machine-Learning">AI &amp; Machine Learning<i className="fas fa-arrow-right"></i></Link></li>
 
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="our-projects" className="nav-link">Our Projects</Link>
+                                    <Link to="/our-projects" className="nav-link">Our Projects</Link>
 
                                 </li>
                                 <li className=" nav-item">
-                                    <Link to="what-we-do" className="nav-link">What We Do </Link>
+                                    <Link to="/what-we-do" className="nav-link">What We Do </Link>
 
                                 </li>
 
                                 <li className=" nav-item">
-                                    <Link to="about-us" className="nav-link">About Us</Link>
+                                    <Link to="/about-us" className="nav-link">About Us</Link>
 
                                 </li>
 

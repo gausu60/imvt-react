@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function Ourvalue() {
+export default function Ourvalue(props) {
+    const [title]  = useState(props.title);
+    document.title = title;
     return (
         <div>
             <section className="space-ptb pb-md-5 bg-dark">

@@ -22,6 +22,7 @@ import DataAnalysis from "./components/DataAnalysis";
 import Softwaredevelopment from "./components/Softwaredevelopment";
 import Ai from "./components/Ai";
 import About from "./components/About";
+import Pagenotfound from "./components/Pagenotfound";
 function App() {
   return (
     <Router>
@@ -32,31 +33,31 @@ function App() {
             <About />
           </Route>
           <Route exact path="/AI-Machine-Learning">
-            <Ai />
+            <Ai title="Artificial Intelligence" />
           </Route>
           <Route exact path="/software-development">
-            <Softwaredevelopment />
+            <Softwaredevelopment title="Software Development" />
           </Route>
           <Route exact path="/data-analysis">
-            <DataAnalysis />
+            <DataAnalysis title="Data Analysis" />
           </Route>
           <Route exact path="/mobile-app-development">
-            <MobileApp />
+            <MobileApp title="Mobile App Development" />
           </Route>
           <Route exact path="/seo">
-            <Seo />
+            <Seo title="Search Engine Optimization" />
           </Route>
           <Route exact path="/digital-marketing">
-            <DigitalMarket />
+            <DigitalMarket title="Digital Marketing" />
           </Route>
           <Route exact path="/logo-design">
-            <Logodesign />
+            <Logodesign title="Logo Design" />
           </Route>
           <Route exact path="/broucher-flyer">
-            <Broucher />
+            <Broucher title="Broucher & Flyer" />
           </Route>
           <Route exact path="/web-development">
-            <WebDevelopment />
+            <WebDevelopment title="Web Development" />
           </Route>
           <Route exact path="/contact-us">
             <Contact />
@@ -67,6 +68,10 @@ function App() {
             <Services/>
             <Goals/>
             <Info/>
+
+          </Route>
+          <Route path="*">
+            <Pagenotfound title="404 Page" /> 
 
           </Route>
 
