@@ -23,12 +23,16 @@ import Softwaredevelopment from "./components/Softwaredevelopment";
 import Ai from "./components/Ai";
 import About from "./components/About";
 import Pagenotfound from "./components/Pagenotfound";
+import Privacy from "./components/Privacy";
 function App() {
   return (
     <Router>
       <div className="App">
         <Header/>
         <Switch>
+          <Route exact path="/privacy-policy">
+            <Privacy />
+          </Route>
           <Route exact path="/about-us">
             <About />
           </Route>

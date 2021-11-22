@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import emailjs,{init} from 'emailjs-com';
+init("user_OP7ToRCL8Oul0aOLl8N1g");
 
 export default class Contact extends Component {
     constructor(props) {
@@ -6,8 +8,26 @@ export default class Contact extends Component {
     
         this.state = {
              title: "Contact",
+             name: null,
+             email: null,
+             mobile: null,
+             enqtype:null,
+             msg:null,
         }
         document.title = this.state.title;
+    }
+    Formsubmit = (event)=>{
+        
+        event.preventDefault();
+        emailjs.sendForm('gmail','template_3s8wf5p',event.target,'user_OP7ToRCL8Oul0aOLl8N1g')
+        .then((result) => {
+        alert("Message Sent, We will get back to you shortly", result.text);
+        },
+        (error) => {
+        alert("An error occurred, Please try again", error.text);
+        });
+
+        
     }
     
     render() {
@@ -33,30 +53,30 @@ export default class Contact extends Component {
                             <div className="col-lg-7 col-md-7 pr-lg-5">
                                 <div className="p-4 p-md-5 bg-white shadow">
                                     <h3>Need assistance? please fill the form</h3>
-                                    <form className="mt-4" method="POST" action="emailSend.php">
+                                    <form className="mt-4" onSubmit={this.Formsubmit} id="contactform" encType="multipart/form-data">
                                         <div className="form-group mb-3">
-                                            <input type="text" className="form-control" id="exampleInputName" placeholder="Name" name="name" required="" />
+                                            <input type="text" className="form-control" id="exampleInputName" placeholder="Name" name="name" required />
                                         </div>
                                         <div className="form-group mb-3">
-                                            <input type="tel" className="form-control" id="exampleInputLname" placeholder="Mobile" name="mobile" required="" />
+                                            <input type="tel" className="form-control" id="exampleInputLname" placeholder="Mobile" name="mobile" required />
                                         </div>
                                         <div className="form-group mb-3">
-                                            <input type="email" className="form-control" id="exampleInputEmail" placeholder="Email Address" name="email" required="" />
+                                            <input type="email" className="form-control" id="exampleInputEmail" placeholder="Email Address" name="email" required />
                                         </div>
                                         <div className="form-group mb-3">
-                                            <input type="text" className="form-control" id="exampleInputEnquiry" placeholder="Enquiry Type" name="enqtype" required="" />
+                                            <input type="text" className="form-control" id="exampleInputEnquiry" placeholder="Enquiry Type" name="enqtype" required />
                                         </div>
                                         <div className="form-group mb-4">
-                                            <textarea className="form-control" id="exampleInputEnquiry-Description" placeholder="Enquiry Description" name="msg" rows="5" required=""></textarea>
+                                            <textarea className="form-control" id="exampleInputEnquiry-Description" placeholder="Enquiry Description" name="msg" rows="5" required></textarea>
                                         </div>
                                         <div className="form-group mb-4">
                                             <div className="custom-control custom-checkbox">
-                                                <input type="checkbox" className="custom-control-input" id="customCheck1" required="" />
+                                                <input type="checkbox" className="custom-control-input" id="customCheck1" name="agree" required />
                                                 <label className ="custom-control-label small" for="customCheck1">I agree to talk about my project with IMVirtualTech</label>
                                             </div>
                                         </div>
                                         <div className="form-group mb-0">
-                                            <button type="submit" className="btn btn-primary" name="email_send">Send Massage<i className="fas fa-arrow-right pl-3"></i></button>
+                                            <button type="submit" className="btn btn-primary" >Send Massage<i className="fas fa-arrow-right pl-3"></i></button>
                                         </div>
                                     </form>
                                 </div>
