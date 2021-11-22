@@ -14,15 +14,15 @@ export default function Footer() {
                             </div>
                             <div className="col-sm-9 text-sm-right mt-4 mt-sm-0">
                                 <ul className="list-unstyled mb-0 social-icon">
-                                    <li><Link to="https://www.facebook.com/IMVirtualTech" target="_blink"><i className="fab fa-facebook-f"></i></Link></li>
-                                    <li><Link to="https://www.instagram.com/imvirtualtech/" target="_blink"><i className="fab fa-instagram"></i></Link></li>
-                                    <li><Link to="https://twitter.com/IMVirtualTech" target="_blink"><i className="fab fa-twitter"></i></Link></li>
-                                    <li><Link to="https://www.linkedin.com/company/imvirtualtech/" target="_blink"><i className="fab fa-linkedin-in" target="_blink"></i></Link></li>
-                                    <li><Link to="https://www.tumblr.com/blog/imvirtualtech" target="_blink"><i className="fab fa-tumblr"></i></Link></li>
+                                    <li><a to="https://www.facebook.com/IMVirtualTech" target="_blink"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a to="https://www.instagram.com/imvirtualtech/" target="_blink"><i className="fab fa-instagram"></i></a></li>
+                                    <li><a to="https://twitter.com/IMVirtualTech" target="_blink"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a to="https://www.linkedin.com/company/imvirtualtech/" target="_blink"><i className="fab fa-linkedin-in" target="_blink"></i></a></li>
+                                    <li><a to="https://www.tumblr.com/blog/imvirtualtech" target="_blink"><i className="fab fa-tumblr"></i></a></li>
 
-                                    <li><Link to="https://www.reddit.com/user/imvirtualtech" target="_blink"><i className="fab fa-reddit"></i></Link></li>
+                                    <li><a to="https://www.reddit.com/user/imvirtualtech" target="_blink"><i className="fab fa-reddit"></i></a></li>
 
-                                    <li><Link to="https://github.com/IMVirtualTech" target="_blink"><i className="fab fa-github"></i></Link></li>
+                                    <li><a to="https://github.com/IMVirtualTech" target="_blink"><i className="fab fa-github"></i></a></li>
 
 
 
@@ -40,17 +40,17 @@ export default function Footer() {
                             <h5 className="text-primary mb-2 mb-sm-4">IT Services</h5>
                             <div className="footer-link">
                                 <ul className="list-unstyled mb-0">
-                                    <li><Link to="web-development">Web Designing &amp; Development</Link></li>
-                                    <li><Link to="logo-design">Logo Designing</Link></li>
-                                    <li><Link to="broucher-flyer">Brochures &amp; Flyer Designing</Link></li>
-                                    <li><Link to="digital-marketing">Digital Marketing</Link></li>
-                                    <li><Link to="seo">Search Engine Optimization</Link></li>
+                                    <li><Link to="/web-development">Web Designing &amp; Development</Link></li>
+                                    <li><Link to="/logo-design">Logo Designing</Link></li>
+                                    <li><Link to="/broucher-flyer">Brochures &amp; Flyer Designing</Link></li>
+                                    <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+                                    <li><Link to="/seo">Search Engine Optimization</Link></li>
                                 </ul>
                                 <ul className="list-unstyled mb-0">
-                                    <li><Link to="mobile-app-development">Mobile App Development</Link></li>
-                                    <li><Link to="data-analysis">Data Analysis</Link></li>
-                                    <li><Link to="software-development">Software Development</Link></li>
-                                    <li><Link to="AI-Machine-Learning">AI &amp; Machine Learning</Link></li>
+                                    <li><Link to="/mobile-app-development">Mobile App Development</Link></li>
+                                    <li><Link to="/data-analysis">Data Analysis</Link></li>
+                                    <li><Link to="/software-development">Software Development</Link></li>
+                                    <li><Link to="/AI-Machine-Learning">AI &amp; Machine Learning</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -58,9 +58,9 @@ export default function Footer() {
                             <h5 className="text-primary mb-2 mb-sm-4">Company</h5>
                             <div className="footer-link">
                                 <ul className="list-unstyled mb-0">
-                                    <li><Link to="about-us">About</Link></li>
-                                    <li><Link to="IT-blog">IT Blog</Link></li>
-                                    <li><Link to="careers">Career</Link></li>
+                                    <li><Link to="/about-us">About</Link></li>
+                                    <li><Link to="/IT-blog">IT Blog</Link></li>
+                                    <li><Link to="/about-us">Career</Link></li>
 
                                 </ul>
                             </div>
@@ -71,10 +71,10 @@ export default function Footer() {
                                 <ul className="list-unstyled mb-0">
 
 
-                                    <li><Link to="contact-us">Contact Us</Link></li>
+                                    <li><Link to="/contact-us">Contact Us</Link></li>
 
 
-                                    <li><Link to="privacy-policy">Privacy Policy</Link></li>
+                                    <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>

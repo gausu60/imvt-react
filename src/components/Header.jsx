@@ -18,7 +18,7 @@ export default function Header() {
                                     </div>
                                     <div className="d-inline-block py-1">
                                         <ul className="list-unstyled">
-                                            <li><Link to="/careers">Careers</Link></li>
+                                            <li><Link to="/about-us">Careers</Link></li>
 
                                         </ul>
                                     </div>
